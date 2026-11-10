@@ -136,13 +136,8 @@ if __name__ == "__main__":
     print("Agent:", tra_loi)
     print()
 
-    print("=== Lượt 2 (kiểm tra memory) ===")
-    print("Khách:", "Còn đơn 5678 thì sao?")
-    tra_loi = agent.ask("Còn đơn 5678 thì sao?")
+    print("=== Lượt 3 ===")
+    print("Khách:", "hoàn tiền đơn 1234?")
+    tra_loi = agent.ask("hoàn tiền đơn 1234?")
     print("Agent:", tra_loi)
     print()
-
-    agent.save_trace()
-    print(f"Tổng token: {agent.total_in} vào / {agent.total_out} ra")
-    print()
-    print("Thử ngay: mở traces/last_run.json và đọc lại từng bước agent đã làm.")

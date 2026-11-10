@@ -15,6 +15,11 @@ RETURN_POLICY = {
     "bàn phím": "Được đổi trả trong 30 ngày nếu chưa bóc seal.",
 }
 
+REFUND_ORDERS = {
+    "1234": {"amount": "2k"},
+    "5678": {"amount": "5k"},
+}
+
 
 def get_order_status(order_id: str) -> str:
     order = ORDERS.get(order_id)
@@ -33,8 +38,11 @@ def check_return_policy(product: str) -> str:
     return f"{product}: {policy}"
 
 
-def calc_refund(amount: int) -> str:
-    return f"Hoàn lại {amount:,} đồng (đã gồm phí vận chuyển)."
+def calc_refund(order_id: str) -> str:
+    order = REFUND_ORDERS.get(order_id)
+    if order is None:
+        return f"Không tìm thấy đơn {order_id} được hoàn tiền bao nhiêu."
+    return f"Đơn {order_id}: Hoàn lại {order["amount"]} đồng (đã gồm phí vận chuyển)."
 
 
 TOOLS = [
@@ -66,10 +74,25 @@ TOOLS = [
             },
         },
     },
+    {
+        "type": "function",
+        "function": {
+            "name": "calc_refund",
+            "description": "hoàn trả tiền cho 1 đơn hàng.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "order_id": {"type": "string", "description": "mã đơn hàng, ví dụ 1234"}
+                },
+                "required": ["order_id"],
+            },
+        },
+    },
 ]
 
 # Tên hàm -> hàm Python thật. Harness dùng bảng này để chạy tool.
 TOOL_FUNCTIONS = {
     "get_order_status": get_order_status,
     "check_return_policy": check_return_policy,
+    "calc_refund": calc_refund,
 }
