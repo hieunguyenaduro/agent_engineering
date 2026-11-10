@@ -1,0 +1,8 @@
+# Buổi 10 chạy hoàn toàn offline, không cần thư viện ngoài.
+# Chỉ dùng thư viện chuẩn của Python 3.10+.
+# Giữ file này để đồng nhất cấu trúc với các buổi khác.
+
+# Nếu bạn thay pipeline luật bằng model thật:
+# langchain-core>=0.3
+# langchain-openai>=0.2
+# python-dotenv>=1.0

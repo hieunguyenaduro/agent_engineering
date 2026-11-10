@@ -1,0 +1,1 @@
+Khách Minh, SĐT 0909 123 456, email minh@example.com, CCCD 079123456789.

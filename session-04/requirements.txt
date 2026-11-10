@@ -1,0 +1,6 @@
+# Sáu ví dụ của buổi 4 chỉ dùng thư viện chuẩn của Python.
+# python-dotenv để đọc .env nếu bạn nối agent thật vào bài lab.
+python-dotenv>=1.0
+
+# Slide cần python-pptx; cài riêng khi muốn sinh lại slide:
+#   pip install python-pptx

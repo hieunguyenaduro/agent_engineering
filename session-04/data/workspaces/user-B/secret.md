@@ -1,0 +1,1 @@
+user-B: Lan, SĐT 0912 345 678, email lan@example.com. Giá vốn: 320.000đ.

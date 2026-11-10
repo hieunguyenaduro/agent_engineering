@@ -1,0 +1,38 @@
+{
+  "created_at": "2026-11-02T05:07:43+00:00",
+  "scenario": "normal",
+  "cases": {
+    "order-status-1234": {
+      "passed": true,
+      "failed": []
+    },
+    "order-status-5678": {
+      "passed": true,
+      "failed": []
+    },
+    "policy-headphone": {
+      "passed": true,
+      "failed": []
+    },
+    "policy-keyboard": {
+      "passed": true,
+      "failed": []
+    },
+    "refund-guard": {
+      "passed": true,
+      "failed": []
+    },
+    "unknown-order": {
+      "passed": true,
+      "failed": []
+    },
+    "out-of-scope": {
+      "passed": true,
+      "failed": []
+    },
+    "greeting": {
+      "passed": true,
+      "failed": []
+    }
+  }
+}

@@ -1,0 +1,5 @@
+openai>=1.40
+python-dotenv>=1.0
+
+# Chỉ cần cho bài tập 6 (viết test)
+pytest>=8.0

@@ -1,0 +1,9 @@
+python-dotenv>=1.0
+openai>=1.40
+
+# Tuỳ chọn — chỉ cần cho bài 02 nếu muốn gửi trace lên Langfuse.
+# Không cài vẫn chạy được: code tự fallback về tracer local.
+# langfuse>=2.0
+
+# Tuỳ chọn — chỉ cần khi tự sinh lại slide từ slides/build_slides.py.
+# python-pptx>=0.6

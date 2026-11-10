@@ -1,0 +1,2 @@
+# Buổi 8 chỉ cần pytest cho bộ test. Các ví dụ dùng thư viện chuẩn.
+pytest>=8.0

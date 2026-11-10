@@ -1,0 +1,14 @@
+# Buổi 3 — Tool and MCP Engineering
+#
+# Sáu ví dụ trong buổi chạy được mà KHÔNG cần các package dưới đây:
+# 01–04 chỉ dùng thư viện chuẩn; 05–06 in hướng dẫn nếu thiếu mcp.
+# Cài đủ để làm bài tập MCP và các bài mở rộng.
+
+langchain-core>=0.3
+langchain-openai>=0.2
+python-dotenv>=1.0
+
+# MCP SDK — cần cho bài 05, 06 và bài tập 5, 6.
+# Ghim <2 vì MCP 2.x đổi tên FastMCP -> MCPServer và đổi API;
+# bài giảng viết theo API 1.x ổn định.
+mcp>=1.2,<2
