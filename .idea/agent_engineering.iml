@@ -3,14 +3,12 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/.venv312" />
     </content>
-    <orderEntry type="jdk" jdkName="~/personal_project/agent_engineering/.venv" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="~/Personalproject/agent_engineering/.venv312" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
-  <component name="PackageRequirementsSettings" />
   <component name="PyDocumentationSettings">
     <option name="format" value="PLAIN" />
   </component>
-  <component name="ReSTService" />
-  <component name="TestRunnerService" />
 </module>
